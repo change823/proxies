@@ -12,7 +12,7 @@ proxyList = []
 def verify(ip, port, type):
     proxies = {}
     try:
-        telnetlib.Telnet(ip, port=port, timeout=3)
+        telnetlib.Telnet(ip, port=port, timeout=1)
     except:
         print('unconnected')
     else:
